@@ -49,7 +49,7 @@ if not os.path.exists(project_dir + '/bed.icon'):
     urlretrieve(bed_url, bed_icon)
 
 
-with Diagram("Dãy Công nghệ, kỹ thuật, kế toán", show=False):
+with Diagram("Dãy Công nghệ, kỹ thuật, kế toán", filename='day_ben_trai', show=False):
     with Cluster("Không gian giữa"):
         Custom("Thang máy", elevator_icon) - Blank("") - Blank("") - Blank("") - Blank("") - Blank("") - Custom('Cửa ra vào', door_icon)
     with Cluster("Dãy ngoài"):
@@ -72,7 +72,7 @@ with Diagram("Dãy Công nghệ, kỹ thuật, kế toán", show=False):
         
     
 
-with Diagram("Dãy Kinh doanh - Marketing - Hỗ trợ kỹ thuật - Nghiệp vụ", show=False, direction="TB"):
+with Diagram("Dãy Kinh doanh - Marketing - Hỗ trợ kỹ thuật - Nghiệp vụ", filename='day_ben_phai', show=False, direction="TB"):
     with Cluster("Dãy ngoài"):
         with Cluster("Phía trong"):
             Custom("Nguyễn Văn Dân", man_icon) - Custom("Hồ Đức Trí", man_icon) - Custom("Nguyễn Văn Minh", man_icon) -\
