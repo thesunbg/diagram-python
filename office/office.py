@@ -4,52 +4,54 @@ from diagrams.custom import Custom
 from urllib.request import urlretrieve
 import os
 
+module = 'office'
 project_dir = os.path.dirname(os.path.abspath(__file__))
+print(project_dir)
 
 man_url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC4D8kOabwe8e6c1xJEOjn_006gXxXJD9Ung&usqp=CAU'
-man_icon = 'man.icon'
+man_icon = module + '/man.icon'
 if not os.path.exists(project_dir + '/man.icon'):
     print('download man.icon')
     urlretrieve(man_url, man_icon)
 
 woman_url = 'https://p.kindpng.com/picc/s/164-1648741_mom-icon-png-customer-icon-transparent-png-png.png'
-woman_icon = 'woman.icon'
+woman_icon = module + '/woman.icon'
 if not os.path.exists(project_dir + '/woman.icon'):
     print('download woman.icon')
     urlretrieve(woman_url, woman_icon)
 
 chair_url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ58fVIhfBq3JnYdd3wtg9giZiPhYNzGEMX1Q&usqp=CAU'
-chair_icon = 'chair.icon'
+chair_icon = module + '/chair.icon'
 if not os.path.exists(project_dir + '/chair.icon'):
     print('download chair.icon')
     urlretrieve(chair_url, chair_icon)
 
 elevator_url = 'https://st2.depositphotos.com/6025596/9459/v/950/depositphotos_94590862-stock-illustration-elevator-icon-lift-symbol.jpg'
-elevator_icon = 'elevator.icon'
+elevator_icon = module + '/elevator.icon'
 if not os.path.exists(project_dir + '/elevator.icon'):
     print('download elevator.icon')
     urlretrieve(elevator_url, elevator_icon)
 
 door_url = 'https://cdn-icons-png.flaticon.com/512/59/59801.png'
-door_icon = 'door.icon'
+door_icon = module + '/door.icon'
 if not os.path.exists(project_dir + '/door.icon'):
     print('download door.icon')
     urlretrieve(door_url, door_icon)
 
 desk_circle_url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP6WIocmgH-MEpzEQPYYkVV9pXKLbhTKCxog&usqp=CAU'
-desk_circle_icon = 'desk-circle.icon'
+desk_circle_icon = module + '/desk-circle.icon'
 if not os.path.exists(project_dir + '/desk-circle.icon'):
     print('download desk-circle.icon')
     urlretrieve(desk_circle_url, desk_circle_icon)
 
 bed_url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjuT0CU-25imSzGacX-954Q7fptJGnNjx0kQ&usqp=CAU'
-bed_icon = 'bed.icon'
+bed_icon = module + '/bed.icon'
 if not os.path.exists(project_dir + '/bed.icon'):
     print('download bed.icon')
     urlretrieve(bed_url, bed_icon)
 
 
-with Diagram("Dãy Công nghệ, kỹ thuật, kế toán", filename='day_ben_trai', show=False):
+with Diagram("Dãy Công nghệ, kỹ thuật, kế toán", filename='office/day_ben_trai', show=False):
     with Cluster("Không gian giữa"):
         Custom("Thang máy", elevator_icon) - Blank("") - Blank("") - Blank("") - Blank("") - Blank("") - Custom('Cửa ra vào', door_icon)
     with Cluster("Dãy ngoài"):
@@ -72,7 +74,7 @@ with Diagram("Dãy Công nghệ, kỹ thuật, kế toán", filename='day_ben_tr
         
     
 
-with Diagram("Dãy Kinh doanh - Marketing - Hỗ trợ kỹ thuật - Nghiệp vụ", filename='day_ben_phai', show=False, direction="TB"):
+with Diagram("Dãy Kinh doanh - Marketing - Hỗ trợ kỹ thuật - Nghiệp vụ", filename='office/day_ben_phai', show=False, direction="TB"):
     with Cluster("Dãy ngoài"):
         with Cluster("Phía trong"):
             Custom("Nguyễn Văn Dân", man_icon) - Custom("Hồ Đức Trí", man_icon) - Custom("Nguyễn Văn Minh", man_icon) -\
