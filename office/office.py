@@ -62,7 +62,7 @@ with Diagram("Dãy Công nghệ, kỹ thuật, kế toán", filename='office/day
             Custom("Bàn trống", chair_icon) - Custom("Bàn trống", chair_icon) - Custom("Đặng Vặn Tiễu", male_icon) - \
             Custom("Nguyễn Tiến Việt", male_icon) - Custom("Phạm Quốc Chung", male_icon) - Custom("Lê Chử Hữu Hà", male_icon) - Blank("")
     with Cluster("Dãy trong"):
-        with Cluster("CEO iNET"):
+        with Cluster("Lonely Zone"):
             ceo = [Custom("Nguyễn Văn Đô", male_icon)]
         with Cluster("Phía ngoài"):
             [ceo - Custom("Trịnh Quốc Hoàn Đạt", male_icon)] - Custom("Nguyễn Trung Kiên", male_icon) - Custom("Hà Văn Hùng", male_icon) - \
