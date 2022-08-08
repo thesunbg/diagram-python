@@ -62,7 +62,7 @@ with Diagram("Dãy Công nghệ, kỹ thuật, kế toán", filename='office/day
             Custom("Bàn trống", chair_icon) - Custom("Bàn trống", chair_icon) - Custom("Đặng Vặn Tiễu", male_icon) - \
             Custom("Nguyễn Tiến Việt", male_icon) - Custom("Phạm Quốc Chung", male_icon) - Custom("Lê Chử Hữu Hà", male_icon) - Blank("")
     with Cluster("Dãy trong"):
-        with Cluster("CEO"):
+        with Cluster("CEO iNET"):
             ceo = [Custom("Nguyễn Văn Đô", male_icon)]
         with Cluster("Phía ngoài"):
             [ceo - Custom("Trịnh Quốc Hoàn Đạt", male_icon)] - Custom("Nguyễn Trung Kiên", male_icon) - Custom("Hà Văn Hùng", male_icon) - \
@@ -77,9 +77,10 @@ with Diagram("Dãy Công nghệ, kỹ thuật, kế toán", filename='office/day
 with Diagram("Dãy Kinh doanh - Marketing - Hỗ trợ kỹ thuật - Nghiệp vụ", filename='office/day_ben_phai', show=False, direction="TB"):
     with Cluster("Dãy ngoài"):
         with Cluster("Phía trong"):
-            Custom("Nguyễn Văn Dân", male_icon) - Custom("Bàn trống", chair_icon) - Custom("Nguyễn Văn Minh", male_icon) -\
-            Custom("Nguyễn Bảo Linh", male_icon) - Custom("Nguyễn Đức Huỳnh", male_icon) - Custom("Phạm Đức Việt", male_icon) - \
-            Custom("Võ Kiều My", female_icon) - Custom("Nguyễn Thanh Huyền", female_icon) - Custom("Nguyễn Việt Bắc", male_icon)
+            Custom("Nguyễn Văn Dân", male_icon) - Custom("Nguyễn Văn Minh", male_icon) - Custom("Nguyễn Bảo Linh", male_icon) -\
+            Custom("Nguyễn Đức Huỳnh", male_icon) - Custom("Phạm Đức Việt", male_icon) - \
+            Custom("Võ Kiều My", female_icon) - Custom("Nguyễn Thanh Huyền", female_icon) - Custom("Lại Minh Quang", male_icon) -\
+            Custom("Nguyễn Việt Bắc", male_icon)
         with Cluster("Phía trong"):
             Custom("Bùi Đức Hoà", male_icon) - Custom("Nguyễn Hữu Phúc", male_icon) - Custom("Bàn trống", chair_icon) - \
             Custom("Phạm Minh Phương", female_icon) - Custom("Nguyễn Thảo Linh", female_icon) - \
